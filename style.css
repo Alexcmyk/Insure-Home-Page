@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
 
+:root {
+    --main-color: hsl(256, 26%, 20%);
+    --secondary-color: hsl(216, 30%, 68%);
+
+    --title-color: hsl(270, 9%, 17%);
+    --body-type-color: hsl(273, 4%, 51%);
+    --footer-bg: hsl(0, 0%, 98%);
+}
+
 /*
 *  html5resetcss
 */
@@ -27,7 +36,188 @@ html {
     box-sizing: inherit;
 }
 
+ul {
+    list-style: none;
+}
+
 body {
     font-size: 16px;
     font-family: 'Karla', sans-serif;
+    color: var(--body-type-color);
 }
+
+h1,
+h2,
+h3 {
+    font-family: 'DM Serif Display', serif;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 4.5em;
+    letter-spacing: 2px;
+    position: relative;
+    margin: 0;
+    padding-top: 75px;
+}
+
+h1::before {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 1px;
+    width: 150px;
+}
+
+.btn {
+    background-color: transparent;
+    padding: 13px 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: var(--main-color);
+    background-color: #fff;
+}
+
+.btn-reverse {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    transition: all 0.3s ease
+}
+
+.btn-reverse:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 35px;
+    width: 1200px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.align-start {
+    align-items: flex-start;
+    margin-bottom: -40px;
+}
+
+.flex > div {
+    flex:1
+}
+
+/* Nav Styles */
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-left: 30px;
+}
+
+nav li a {
+    color: var( --body-type-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Header Styles */
+
+header {
+    color: #fff;
+    background-color: var( --main-color);
+    padding: 50px 0;
+    position: relative;
+}
+
+header .left {
+    padding-right: 15px;
+}
+
+header .left p {
+    margin-top: 20px;
+    line-height: 1.75;
+    letter-spacing: 1px;
+}
+
+.header__img__right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80%;
+    width: auto;
+}
+
+.header__img__left {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 70%;
+    transform: translateY(50%);
+    width: auto;
+    z-index: 0;
+}
+
+header .btn {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* other bg placement */
+
+/* header::after {
+    content: '';
+    background-image: url(./images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+/* header::before {
+    content: '';
+    background-image: url(./images/bg-pattern-intro-left-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    position: absolute;
+    top:0;
+    right: 0;
+    transform: translateY(50%);
+    width: 100%;
+    height: 100%;
+} */
+
+.header__img {
+    margin-bottom: -200px;
+}
+
+/* Section Styles */
+
+section {
+
+}
+
+/* Footer Styles */
+
+footer {
+
+} 
