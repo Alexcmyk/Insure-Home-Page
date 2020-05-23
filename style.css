@@ -44,6 +44,7 @@ body {
     font-size: 16px;
     font-family: 'Karla', sans-serif;
     color: var(--body-type-color);
+    font-weight: 400;
 }
 
 h1,
@@ -69,6 +70,32 @@ h1::before {
     left: 0;
     height: 1px;
     width: 150px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 4.5em;
+    letter-spacing: 2px;
+    color: var(--main-color);
+    position: relative;
+    padding-top: 75px;
+    margin-bottom: 100px;
+}
+
+h2::before {
+    content: '';
+    background-color: var(--main-color);
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 1px;
+    width: 150px;
+}
+
+h3 {
+    color: var(--main-color);
+    font-size: 1.8em;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -135,6 +162,11 @@ nav li a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover {
+    color: var(--main-color);
 }
 
 /* Header Styles */
@@ -144,6 +176,11 @@ header {
     background-color: var( --main-color);
     padding: 50px 0;
     position: relative;
+    margin-bottom: 250px;
+}
+
+header * {
+    z-index: 1;
 }
 
 header .left {
@@ -212,12 +249,83 @@ header .btn {
 
 /* Section Styles */
 
-section {
-
+.were_different {
+    margin-bottom: 90px;
 }
+
+.were_different p {
+    line-height: 1.5;
+    padding-right: 20px;
+}
+
+.were_different img {
+    margin-bottom: 40px; 
+}
+
+.bg-violet {
+    background-color: var(--main-color);
+    margin-bottom: 90px;
+    background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    /* background-size: 40% 100%; background stretch */
+    background-position: right top;
+    padding: 60px 80px;
+}
+
+
+.hww h4 {
+    padding: 0;
+    font-size: 4em;
+    font-family: 'DM Serif Display', serif;
+    color: #fff;
+    width: 75%;
+}
+
 
 /* Footer Styles */
 
 footer {
-
+    background-color: var(--footer-bg);
+    background-image: url(./images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    text-transform: uppercase;
+    padding: 30px 0;
 } 
+
+footer h4 {
+    margin-bottom: 40px;
+    color: var(--main-color);
+}
+
+.social li:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+.social li:hover a img {
+    color: red;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer li a {
+    color: var(--body-type-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer li a:hover {
+    color: var(--main-color);
+}
+
+.border-bottom {
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--body-type-color);
+    margin-bottom: 100px;
+}
+
+.attribution {
+    margin-top: 50px;
+}
