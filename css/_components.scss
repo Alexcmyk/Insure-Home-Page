@@ -1,5 +1,64 @@
+// .btn-main {
+//   display: inline-block;
+//   background-color: var(--color-neutral-1);
+//   color: #fff;
+//   padding: 0.8rem 1.875rem;
+//   font-size: 0.9rem;
+//   border-radius: 5px;
+//   text-transform: uppercase;
+//   letter-spacing: 3px;
+// }
+// .inverse {
+//   background-color: #fff;
+//   color: var(--color-neutral-1);
+// }
+
 .btn-main {
-  background-color: var(--color-neutral-1);
+  display: inline-block;
+  border: 2px solid var(--color-neutral-1);
+  color: var(--color-neutral-1);
+  padding: 0.7rem 1.7rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: var(--color-neutral-1);
+    color: #fff;
+  }
+}
+
+.inverse {
+  border: 2px solid #fff;
   color: #fff;
-  padding: 0.9rem 1.875rem;
+
+  &:hover {
+    background-color: #fff;
+    color: var(--color-neutral-1);
+  }
+}
+
+.hide-for-mobile {
+  display: none;
+}
+
+.line {
+  height: 2px;
+  width: 30%;
+  background-color: #fff;
+}
+
+.right-lines {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 400px;
+}
+.left-lines {
+  position: absolute;
+  left: -10px;
+  bottom: -300px;
 }
