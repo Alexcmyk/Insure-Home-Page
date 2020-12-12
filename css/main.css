@@ -1,0 +1,156 @@
+/* Font import */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+/* Css reset 
+https://github.com/hankchizljaw/modern-css-reset
+*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  /* Global line height*/
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Variables */
+:root {
+  --font-main: "Karla", "Helvetica", "Arial", sans-serif;
+  --font-serif: "DM Serif Display", "Georgia", "Times New Roman", serif;
+  --color-primary-1: hsl(256, 26%, 20%);
+  --color-primary-2: hsl(216, 30%, 68%);
+  --color-neutral-1: hsl(270, 9%, 17%);
+  --color-neutral-2: hsl(273, 4%, 51%);
+  --color-neutral-3: hsl(0, 0%, 98%);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.5;
+  font-family: var(--font-main);
+  color: var(--color-neutral-2);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 1.56rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-neutral-2);
+}
+
+.btn-main {
+  background-color: var(--color-neutral-1);
+  color: #fff;
+  padding: 0.9rem 1.875rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3rem;
+}
+
+.header-navigation {
+  font-size: 1.25rem;
+}
+
+.header-navigation a:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.header-navigation a:hover:not(:last-child) {
+  color: var(--color-neutral-1);
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,20 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.5;
+  font-family: var(--font-main);
+  color: var(--color-neutral-2);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 1.56rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-neutral-2);
+}

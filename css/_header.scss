@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+
+  &-navigation {
+    font-size: 1.25rem;
+
+    a:not(:last-child) {
+      margin-right: 3rem;
+    }
+
+    a:hover:not(:last-child) {
+      color: var(--color-neutral-1);
+    }
+  }
+}
