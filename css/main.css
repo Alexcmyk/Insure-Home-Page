@@ -123,6 +123,13 @@ a {
   color: var(--color-neutral-2);
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Serif Display";
+  line-height: 1;
+}
+
 .btn-main {
   display: inline-block;
   border: 2px solid var(--color-neutral-1);
@@ -160,6 +167,12 @@ a {
   height: 2px;
   width: 30%;
   background-color: #fff;
+}
+
+.drk {
+  background-color: #818181;
+  height: 1px;
+  width: 150px;
 }
 
 .right-lines {
@@ -207,7 +220,7 @@ a {
   position: relative;
 }
 
-.hero-container {
+.hero__container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -215,28 +228,104 @@ a {
   gap: 50px;
 }
 
-.hero-container-text {
+.hero__container-text {
   color: #fff;
 }
 
-.hero-container-text h1 {
+.hero__container-text h1 {
   margin-top: 60px;
   margin-bottom: 20px;
   font-size: 5rem;
-  font-family: "Serif Display";
-  line-height: 1;
 }
 
-.hero-container-text p {
+.hero__container-text p {
   margin-bottom: 40px;
 }
 
-.hero-container-img {
+.hero__container-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.different {
+  margin-top: 300px;
+}
+
+.different-content h2 {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-size: 5rem;
+  font-family: "Serif Display";
+  line-height: 1;
+  color: #000;
+}
+
+.different-content__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin-top: 90px;
+  gap: 30px;
+}
+
+.different-content__grid .item-1 h3 {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.different-content__grid .item-1 p {
+  margin-top: 20px;
+}
+
+.different-content__grid .item-2 h3 {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.different-content__grid .item-2 p {
+  margin-top: 20px;
+}
+
+.different-content__grid .item-3 h3 {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.different-content__grid .item-3 p {
+  margin-top: 20px;
+}
+
+.different .cta {
+  margin-top: 100px;
+  background-color: var(--color-primary-1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 90px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  border-radius: 5px;
+  background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+}
+
+.different .cta h2 {
+  font-size: 3.5rem;
+  max-width: 50%;
 }
 /*# sourceMappingURL=main.css.map */
