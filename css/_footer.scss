@@ -1,0 +1,43 @@
+.footer {
+  background-color: var(--color-neutral-3);
+  background-image: url(../images/bg-pattern-footer-desktop.svg);
+  background-position: top left;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 90px;
+    border-bottom: 1px solid var(--color-neutral-2);
+
+    &__social {
+      display: flex;
+
+      li {
+        margin-left: 20px;
+        transition: opacity 0.1s ease-in;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 40px;
+
+    &__column {
+      min-width: 256px;
+    }
+
+    ul li {
+      margin-top: 10px;
+    }
+  }
+}
